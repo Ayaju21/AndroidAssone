@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#009688"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:text="@string/score_placeholder"
+            style="@style/textViewTopBarStyle" />
+
+        <TextView
+            android:id="@+id/textViewPercentage"
+            android:text="@string/percent_placeholder"
+            style="@style/textViewTopBarStyle"
+            />
+
+        <TextView
+            android:id="@+id/textViewStreak"
+            android:text="@string/streak_placeholder"
+            style="@style/textViewTopBarStyle"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <ScrollView
+        android:id="@+id/layoutQuestionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:background="#009688"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            style="@style/textViewBasicStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/this_will_be_a_question"
+            tools:ignore="ScrollViewSize" />
+
+    </ScrollView>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutAnswersContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAnswer1"
+            style="@style/answer_button_style"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAnswer2"
+            style="@style/answer_button_style"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAnswer3"
+            style="@style/answer_button_style"
+
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/answer_button"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="8dp"
+            android:textColor="@color/black"
+            android:text="@string/next"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

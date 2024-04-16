@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#009688</color>
+    <color name="white">#F9FAFA</color>
+
+    <color name="my_white">#F8FAFA</color>
+    <color name="red">#C20000</color>
+    <color name="aqua">#FFEB3B</color>
+    <color name="aqua_dark">#F44336</color>
+    <color name="aqua_darker">#F3F6F6</color>
+    <color name="jet">#009688</color>
+    <color name="my_black">#202020</color>
+</resources>
